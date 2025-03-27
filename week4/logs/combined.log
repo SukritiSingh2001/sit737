@@ -1,0 +1,4 @@
+{"level":"info","message":"New addition operation requested: 10 addition 5","service":"calculator-microservice"}
+{"level":"info","message":"New subtraction operation requested: 10 subtraction 5","service":"calculator-microservice"}
+{"level":"info","message":"New multiplication operation requested: 10 multiplication 5","service":"calculator-microservice"}
+{"level":"info","message":"New division operation requested: 10 division 5","service":"calculator-microservice"}
