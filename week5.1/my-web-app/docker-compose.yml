@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: my-web-app
+    build: .
+    ports:
+      - "3000:3000"
+    container_name: web-app
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
+      interval: 30s
+      retries: 3
+      start_period: 5s
+      timeout: 10s
