@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-app-service
+spec:
+  type: NodePort
+  selector:
+    tier: frontend
+  ports:
+    - port: 3000
+      targetPort: 5000        # <- FIXED
+      nodePort: 30036

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  labels:
+    run: mypod
+spec:
+  containers:
+  - image: sukriti2001/flask-demo:latest
+    name: flask-demo
+    ports:
+    - containerPort: 8080
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+  
+
