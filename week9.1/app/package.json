@@ -1,0 +1,14 @@
+{
+  "name": "mongo-microservice",
+  "version": "1.0.0",
+  "description": "A simple Node.js microservice with MongoDB on Kubernetes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4",
+    "dotenv": "^16.0.3"
+  }
+}
