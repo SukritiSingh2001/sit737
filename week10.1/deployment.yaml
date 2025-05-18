@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodecalc-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nodecalc
+  template:
+    metadata:
+      labels:
+        app: nodecalc
+    spec:
+      containers:
+      - name: nodecalcdocker
+        image: us-central1-docker.pkg.dev/sit737-25t1-singh-302a9b2/nodecalc-repo/nodecalcdocker:v1
+        ports:
+        - containerPort: 8090
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 200m
+            memory: 128Mi
